@@ -9,10 +9,10 @@ const App =()=>{
         <div>
             <h1>Our Menu</h1>
             <div className="btn">
-            <button>All</button>
-            <button>Breakfast</button>
-            <button>Lunch</button>
-            <button>Shakes</button> 
+            <button id="">All</button>
+            <button id="filter-btn-1">Breakfast</button>
+            <button id="filter-btn-2">Lunch</button>
+            <button id="filter-btn-3">Shakes</button> 
             </div>
             <Cart/>
         </div>

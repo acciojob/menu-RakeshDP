@@ -79,7 +79,7 @@ const Cart =()=>{
 
 
     return (
-        <div className="display">
+        <div id="main">
             {
                 states.map((state)=>(
                     <div className="cart">
