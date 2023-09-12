@@ -1,31 +1,24 @@
 import React from "react";
 
-
-
-const Cart =({state})=>{
-
-   
-
-
-    return (
-        <div id="main">
-            {
-                state.map((state)=>(
-                    <div className="cart">
-                    <div className="left">
-                        <img alt="images are view " src={state.img}/>
-                    </div>
-                    <div className="right">
-                        <div>
-                            <h5>{state.title}</h5>
-                            <small>$ {state.price}</small>
-                        </div>
-                        <p>{state.desc}</p>
-                    </div>
-                </div>
-                ))
-            }  
+const Cart = ({ state }) => {
+  return (
+    <div id="main">
+      {state.map((item) => (
+        <div className="cart" key={item.id} data-test-id={`menu-item-${item.category}`}>
+          <div className="left">
+            <img alt="images are view " src={item.img} />
+          </div>
+          <div className="right">
+            <div>
+              <h5>{item.title}</h5>
+              <small>$ {item.price}</small>
+            </div>
+            <p>{item.desc}</p>
+          </div>
         </div>
-    )
-}
-export default Cart
+      ))}
+    </div>
+  );
+};
+
+export default Cart;
