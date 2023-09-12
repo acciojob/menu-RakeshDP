@@ -1,12 +1,44 @@
 h1 {
     color: #27aedb;
     text-align: center;
+    border-bottom: 5px solid #db8427ae;
+    display: inline-block;
+    margin-left: 550px;
     }
     
+.btn{
+   display: flex;
+   justify-content: center;
+}
 
 button{
-    color: #27aedb;
+    color: #db8427ae;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    margin:10px;
+    border:none;
+    background-color: white;    
+}
+.display{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.cart{
+    display: flex;
+    flex-direction:row;
+}
+.right{
+    margin-left: 10px;
+}
+.right h5{
+    display: inline-block;
+}
+.right small{
+   margin-left: 20px;
+   color: orange;
+}
+.left img{
+    width: 250px;
+    border: 3px solid orangered;
 }
